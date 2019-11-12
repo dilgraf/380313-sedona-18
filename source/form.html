@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item"><a href="index.html">Главная</a></li>
+          <li class="menu-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="menu-list__item"><a>Форма отзыва</a></li>
+          <li class="menu-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="City of Sedona">
+      </a>
+    </header>
+
+    <main class="page-main">
+      <div class="promo">
+        <img class="promo__text-sedona" src="https://via.placeholder.com/230x40" width="230" height="40" alt="Sedona">
+      </div>
+      <section class="page-main__header">
+        <h1 class="page-main__heading">Оставьте свой отзыв</h1>
+        <p class="page-main__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="feedback-form__item">
+          <h2 class="feedback-form__heading">Представьтесь:</h2>
+          <label class="feedback-form__label" for="fname">Имя*:</label>
+          <input class="feedback-form__input" type="text" name="fname" id="fname" placeholder="Петр" required>
+          <label class="feedback-form__label" for="lname">Фамилия*:</label>
+          <input class="feedback-form__input" type="text" name="lname" id="lname" placeholder="Иванов" required>
+          <label class="feedback-form__label" for="mname">Отчество:</label>
+          <input class="feedback-form__input" type="text" name="mname" id="mname" placeholder="Александрович">
+        </section>
+
+        <section class="feedback-form__item">
+          <h2 class="feedback-form__heading">Контактная информация:</h2>
+          <label class="feedback-form__label" for="phone">Контактный телефон*:</label>
+          <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
+          <label class="feedback-form__label" for="email">Электронная почта*:</label>
+          <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+        </section>
+
+        <section class="feedback-form__item">
+          <h2 class="feedback-form__heading">Ваше общее впечатление:</h2>
+          <label><input type="radio" name="impression" value="positive"> Скорее положительное</label>
+          <label><input type="radio" name="impression" value="negative"> Скорее отрицательное </label>
+          <label><input type="radio" name="impression" value="dontknow"> Затрудняюсь ответить</label>
+        </section>
+
+        <section class="feedback-form__item">
+          <h2 class="feedback-form__heading">Посещенные достопримечательности:</h2>
+          <label><input type="checkbox" name="bridge">Мост Дьявола</label>
+          <label><input type="checkbox" name="mountain">Гора-Колокол</label>
+          <label><input type="checkbox" name="park">Слайд-парк</label>
+          <label><input type="checkbox" name="redrocks">Красные скалы</label>
+        </section>
+
+        <section class="feedback-form__item">
+          <h2 class="feedback-form__heading">Опишите свои эмоции:</h2>
+          <textarea name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+        </section>
+        <button class="feedback-form__btn btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__hashtag">#visitsedona</div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">Мы в Твиттере</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">Мы в Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
