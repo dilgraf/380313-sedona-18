@@ -1,0 +1,41 @@
+.post {
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+
+  &:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__heading {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    color: $heading-color;
+  }
+
+  &__author {
+    text-transform: none;
+    line-height: 15px;
+  }
+
+  &__like {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: $heading-color;
+  }
+
+  &__pic {
+    margin-right: 12px;
+    vertical-align: bottom;
+  }
+}
