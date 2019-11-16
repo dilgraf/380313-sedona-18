@@ -1,18 +1,18 @@
 .booking {
   padding: 30px;
   padding-bottom: 67px;
+}
 
-  &__heading {
-    margin-bottom: 25px;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    color: $heading-color;
-  }
+.booking__heading {
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $heading-color;
+}
 
-  &__desc {
-    margin-bottom: 57px;
-    line-height: 24px;
-    color: $desc-color;
-  }
+.booking__desc {
+  margin-bottom: 57px;
+  line-height: 24px;
+  color: $desc-color;
 }

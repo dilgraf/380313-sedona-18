@@ -5,37 +5,37 @@
   &:last-of-type {
     border-bottom: 1px solid #e5e5e5;
   }
+}
 
-  &__info {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: left;
-  }
+.post__info {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
 
-  &__heading {
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 15px;
-    color: $heading-color;
-  }
+.post__heading {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+  color: $heading-color;
+}
 
-  &__author {
-    text-transform: none;
-    line-height: 15px;
-  }
+.post__author {
+  text-transform: none;
+  line-height: 15px;
+}
 
-  &__like {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: $heading-color;
-  }
+.post__like {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: $heading-color;
+}
 
-  &__pic {
-    margin-right: 12px;
-    vertical-align: bottom;
-  }
+.post__pic {
+  margin-right: 12px;
+  vertical-align: bottom;
 }

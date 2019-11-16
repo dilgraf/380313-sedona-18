@@ -1,20 +1,20 @@
 .page-main {
   display: flex;
   flex-direction: column;
+}
 
-  &__header {
-    padding: 20px;
-    padding-top: 40px;
-  }
+.page-main__header {
+  padding: 20px;
+  padding-top: 40px;
+}
 
-  &__heading {
-    margin-bottom: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: $heading-color;
-  }
+.page-main__heading {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $heading-color;
+}
 
-  &__intro {
-    line-height: 24px;
-  }
+.page-main__intro {
+  line-height: 24px;
 }

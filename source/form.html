@@ -35,40 +35,57 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Представьтесь:</h2>
-          <label class="feedback-form__label" for="fname">Имя*:</label>
-          <input class="feedback-form__input" type="text" name="fname" id="fname" placeholder="Петр" required>
-          <label class="feedback-form__label" for="lname">Фамилия*:</label>
-          <input class="feedback-form__input" type="text" name="lname" id="lname" placeholder="Иванов" required>
-          <label class="feedback-form__label" for="mname">Отчество:</label>
-          <input class="feedback-form__input" type="text" name="mname" id="mname" placeholder="Александрович">
+          <div class="feedback-form__subitem">
+            <label class="feedback-form__label" for="fname">Имя*:</label>
+            <input class="feedback-form__input" type="text" name="fname" id="fname" placeholder="Петр" required>
+          </div>
+          <div class="feedback-form__subitem">
+            <label class="feedback-form__label" for="lname">Фамилия*:</label>
+            <input class="feedback-form__input" type="text" name="lname" id="lname" placeholder="Иванов" required>
+          </div>
+          <div class="feedback-form__subitem">
+            <label class="feedback-form__label" for="mname">Отчество:</label>
+            <input class="feedback-form__input" type="text" name="mname" id="mname" placeholder="Александрович">
+          </div>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Контактная информация:</h2>
-          <label class="feedback-form__label" for="phone">Контактный телефон*:</label>
-          <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
-          <label class="feedback-form__label" for="email">Электронная почта*:</label>
-          <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+          <label class="feedback-form__label feedback-form__label--contact" for="phone">Контактный телефон*:</label>
+          <div class="feedback-form__input--contact feedback-form__input--phone">
+            <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
+          </div>
+          <label class="feedback-form__label feedback-form__label--contact" for="email">Электронная почта*:</label>
+          <div class="feedback-form__input--contact feedback-form__input--email">
+            <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+          </div>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Ваше общее впечатление:</h2>
-          <label><input type="radio" name="impression" value="positive"> Скорее положительное</label>
-          <label><input type="radio" name="impression" value="negative"> Скорее отрицательное </label>
-          <label><input type="radio" name="impression" value="dontknow"> Затрудняюсь ответить</label>
+          <input class="feedback-form__input--radio" type="radio" name="impression" value="positive" id="radio-positive">
+          <label class="feedback-form__label--option" for="radio-positive">Скорее положительное</label>
+          <input class="feedback-form__input--radio" type="radio" name="impression" value="negative" id="negative">
+          <label class="feedback-form__label--option" for="radio-negative">Скорее отрицательное </label>
+          <input class="feedback-form__input--radio" type="radio" name="impression" value="dontknow" id="dontknow">
+          <label class="feedback-form__label--option" for="radio-dontknow">Затрудняюсь ответить</label>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Посещенные достопримечательности:</h2>
-          <label><input type="checkbox" name="bridge">Мост Дьявола</label>
-          <label><input type="checkbox" name="mountain">Гора-Колокол</label>
-          <label><input type="checkbox" name="park">Слайд-парк</label>
-          <label><input type="checkbox" name="redrocks">Красные скалы</label>
+          <input class="feedback-form__input--checkbox" type="checkbox" name="bridge" id="checkbox-bridge">
+          <label class="feedback-form__label--option" for="checkbox-bridge">Мост Дьявола</label>
+          <input class="feedback-form__input--checkbox" type="checkbox" name="mountain" id="checkbox-mountain">
+          <label class="feedback-form__label--option" for="checkbox-mountain">Гора-Колокол</label>
+          <input class="feedback-form__input--checkbox" type="checkbox" name="park" id="checkbox-park">
+          <label class="feedback-form__label--option" for="checkbox-park">Слайд-парк</label>
+          <input class="feedback-form__input--checkbox" type="checkbox" name="redrocks" id="checkbox-redrocks">
+          <label class="feedback-form__label--option" for="checkbox-redrocks">Красные скалы</label>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Опишите свои эмоции:</h2>
-          <textarea name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
         <button class="feedback-form__btn btn" type="submit">Отправить отзыв</button>
       </form>

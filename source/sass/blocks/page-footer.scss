@@ -2,13 +2,13 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 23px;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-  }
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .page-footer__hashtag {

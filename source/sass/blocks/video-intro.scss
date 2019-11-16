@@ -1,11 +1,11 @@
 .video-intro {
   padding: 40px;
   line-height: 24px;
+}
 
-  &__heading {
-    margin-bottom: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: $heading-color;
-  }
+.video-intro__heading {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $heading-color;
 }

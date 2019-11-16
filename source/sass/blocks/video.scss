@@ -4,15 +4,20 @@
   margin-bottom: 100px;
 }
 
-.video-controls__track {
+.video__track {
   position: absolute;
-  height: 65px;
+  border: 1px solid black;
+  bottom: 6px;
+  left: 70px;
+  height: 45px;
   width: 280px;
   background-color: rdba(#000000, 0.6%);
 }
 
-.video-controls__panel {
-  display: flex;
+.video__controls {
+  position: absolute;
+  bottom: -60px;
+  left: 70px;
   margin: 0 auto;
   padding: 23px;
   height: 20px;
@@ -21,12 +26,8 @@
   background-color: #f2f2f2;
 }
 
-.video-controls__btn {
+.video__btn {
   height: 20px;
   border: none;
   background-color: transparent;
-
-  svg {
-    fill: #5c6870;
-  }
 }

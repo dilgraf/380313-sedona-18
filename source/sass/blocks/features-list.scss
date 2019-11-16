@@ -4,21 +4,21 @@
   align-content: space-between;
   justify-content: center;
   background-color: #eeeeee;
+}
 
-  &__item {
-    align-self: center;
-    width: 280px;
-    padding: 30px 40px;
+.features-list__item {
+  align-self: center;
+  width: 280px;
+  padding: 30px 40px;
 
-    &--road {
-      border-top: 1px solid #d6d6d6;
-      border-bottom: 1px solid #d6d6d6;
-    }
+  &--road {
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
   }
+}
 
-  &__subheading {
-    font-size: 18px;
-    font-weight: bold;
-    color: $heading-color;
-  }
+.features-list__subheading {
+  font-size: 18px;
+  font-weight: bold;
+  color: $heading-color;
 }
