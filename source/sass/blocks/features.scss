@@ -1,0 +1,55 @@
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__header {
+  position: relative;
+  margin: 40px 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    height: 37px;
+    width: 100%;
+    background: url("../../img/bg-triangle.svg") center no-repeat;
+  }
+}
+
+.features__heading {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $heading-color;
+}
+
+.features__intro {
+  line-height: 24px;
+}
+
+.features__item {
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+}
+
+.features__text {
+  padding: 45px 30px;
+  background-color: $initial-bg;
+  color: #ffffff;
+}
+
+.features__subheading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.features__pic {
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}

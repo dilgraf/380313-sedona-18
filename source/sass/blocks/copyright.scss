@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  font-weight: normal;
+}
+
+.copyright__link {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+  background: url("../../img/logo-htmlacademy.svg") center no-repeat;
+}

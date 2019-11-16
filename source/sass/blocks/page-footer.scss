@@ -1,0 +1,18 @@
+.page-footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 23px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}

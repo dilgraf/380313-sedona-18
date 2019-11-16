@@ -1,0 +1,33 @@
+.video {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+.video__track {
+  position: absolute;
+  border: 1px solid black;
+  bottom: 6px;
+  left: 70px;
+  height: 45px;
+  width: 280px;
+  background-color: rdba(#000000, 0.6%);
+}
+
+.video__controls {
+  position: absolute;
+  bottom: -60px;
+  left: 70px;
+  margin: 0 auto;
+  padding: 23px;
+  height: 20px;
+  width: 235px;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.video__btn {
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}

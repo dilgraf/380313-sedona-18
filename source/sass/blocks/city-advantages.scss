@@ -1,0 +1,45 @@
+.city-advantages__list {
+  list-style: none;
+  text-align: left;
+  margin: 40px;
+}
+
+.city-advantages__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: $heading-color;
+}
+
+.city-advantages__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -50px;
+  }
+
+  &--house::before {
+    width: 37px;
+    height: 36px;
+    background: url("../../img/icon-house.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  &--gifts::before {
+    width: 32px;
+    height: 38px;
+    background: url("../../img/icon-gift.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  &--food::before {
+    left: -55px;
+    width: 40px;
+    height: 35px;
+    background: url("../../img/icon-burger.svg") center no-repeat;
+    background-size: contain;
+  }
+}
