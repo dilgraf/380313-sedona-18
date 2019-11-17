@@ -28,15 +28,6 @@
     margin-left: 20px;
     margin-bottom: 15px;
   }
-
-  &--option,
-  &--checkbox {
-    margin-left: 25px;
-    text-transform: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: $heading-color;
-  }
 }
 
 .feedback-form__subitem {
@@ -92,25 +83,26 @@
 }
 
 /* radio button */
-.feedback-form__label--option {
+.feedback-form__option {
   display: block;
   position: relative;
-  padding-left: 60px;
+  padding-left: 80px;
   margin-bottom: 15px;
   cursor: pointer;
+  text-transform: none;
   font-size: 18px;
+  font-weight: bold;
+  color: $heading-color;
   line-height: 50px;
 
-  &:hover input ~ .feedback-form__checkmark {
-    background-color: $input-hover;
-    border: 15px solid $input-hover;
-  }
-
-  &:focus input ~ .feedback-form__checkmark {
-    background-color: $input-down;
-    border: 15px solid $input-down;
+  &:hover {
+    .feedback-form__checkmark {
+      background-color: $input-hover;
+      border: 15px solid $input-hover;
+    }
   }
 }
+
 /* creating a custom radio button */
 .feedback-form__checkmark {
   content: "";
@@ -130,9 +122,17 @@
     display: none;
   }
 }
+
 /* disabling the default radio button */
 .feedback-form__input--radio {
   display: none;
+
+  &:focus {
+    .feedback-form__checkmark {
+      background-color: $input-down-bg;
+      border: 15px solid $input-down-bg;
+    }
+  }
 
   /* displaying the dot and its styling */
   &:checked ~ .feedback-form__checkmark::after {
@@ -142,28 +142,14 @@
     border-radius: 50%;
     background-color: #333333;
   }
-
-  &:focus ~ .feedback-form__checkmark::after {
-    display: block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: $input-down;
-  }
 }
 
 /* checkbox */
-.feedback-form__label--checkbox {
-  display: block;
-  position: relative;
-  padding-left: 60px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 50px;
-
-  &:hover input ~ .feedback-form__check {
-    background-color: $input-hover;
+.feedback-form__option {
+  &:hover {
+    .feedback-form__check {
+      background-color: $input-hover;
+    }
   }
 }
 
