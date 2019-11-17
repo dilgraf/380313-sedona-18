@@ -100,6 +100,11 @@
       background-color: $input-hover;
       border: 15px solid $input-hover;
     }
+
+    /* hover for checkbox */
+    .feedback-form__check {
+      background-color: $input-hover;
+    }
   }
 }
 
@@ -145,14 +150,6 @@
 }
 
 /* checkbox */
-.feedback-form__option {
-  &:hover {
-    .feedback-form__check {
-      background-color: $input-hover;
-    }
-  }
-}
-
 .feedback-form__check {
   content: "";
   position: absolute;
