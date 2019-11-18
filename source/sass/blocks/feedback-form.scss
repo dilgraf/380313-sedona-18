@@ -62,14 +62,14 @@
 .feedback-form__wrap {
   position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 58px;
-      height: 58px;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+  }
 
   &--phone::after {
     background: #e6e6e6 url("../../img/icon-phone.svg") center no-repeat;
