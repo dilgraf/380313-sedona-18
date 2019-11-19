@@ -52,35 +52,49 @@
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Контактная информация:</h2>
           <label class="feedback-form__label feedback-form__label--contact" for="phone">Контактный телефон*:</label>
-          <div class="feedback-form__input--contact feedback-form__input--phone">
+          <div class="feedback-form__wrap feedback-form__wrap--phone">
             <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
           </div>
           <label class="feedback-form__label feedback-form__label--contact" for="email">Электронная почта*:</label>
-          <div class="feedback-form__input--contact feedback-form__input--email">
+          <div class="feedback-form__wrap feedback-form__wrap--email">
             <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
           </div>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Ваше общее впечатление:</h2>
-          <input class="feedback-form__input--radio" type="radio" name="impression" value="positive" id="radio-positive">
-          <label class="feedback-form__label--option" for="radio-positive">Скорее положительное</label>
-          <input class="feedback-form__input--radio" type="radio" name="impression" value="negative" id="negative">
-          <label class="feedback-form__label--option" for="radio-negative">Скорее отрицательное </label>
-          <input class="feedback-form__input--radio" type="radio" name="impression" value="dontknow" id="dontknow">
-          <label class="feedback-form__label--option" for="radio-dontknow">Затрудняюсь ответить</label>
+          <label class="feedback-form__option" for="radio-positive">Скорее положительное
+            <input class="feedback-form__radio" type="radio" name="impression" value="positive" id="radio-positive" checked>
+            <span class="feedback-form__checkmark"></span>
+          </label>
+          <label class="feedback-form__option" for="radio-negative">Скорее отрицательное
+            <input class="feedback-form__radio" type="radio" name="impression" value="negative" id="radio-negative">
+            <span class="feedback-form__checkmark"></span>
+          </label>
+          <label class="feedback-form__option" for="radio-dontknow">Затрудняюсь ответить
+            <input class="feedback-form__radio" type="radio" name="impression" value="dontknow" id="radio-dontknow">
+            <span class="feedback-form__checkmark"></span>
+          </label>
         </section>
 
         <section class="feedback-form__item">
           <h2 class="feedback-form__heading">Посещенные достопримечательности:</h2>
-          <input class="feedback-form__input--checkbox" type="checkbox" name="bridge" id="checkbox-bridge">
-          <label class="feedback-form__label--option" for="checkbox-bridge">Мост Дьявола</label>
-          <input class="feedback-form__input--checkbox" type="checkbox" name="mountain" id="checkbox-mountain">
-          <label class="feedback-form__label--option" for="checkbox-mountain">Гора-Колокол</label>
-          <input class="feedback-form__input--checkbox" type="checkbox" name="park" id="checkbox-park">
-          <label class="feedback-form__label--option" for="checkbox-park">Слайд-парк</label>
-          <input class="feedback-form__input--checkbox" type="checkbox" name="redrocks" id="checkbox-redrocks">
-          <label class="feedback-form__label--option" for="checkbox-redrocks">Красные скалы</label>
+          <label class="feedback-form__option" for="checkbox-bridge">Мост Дьявола
+            <input class="feedback-form__checkbox" type="checkbox" name="bridge" id="checkbox-bridge" checked>
+            <span class="feedback-form__check"></span>
+          </label>
+          <label class="feedback-form__option" for="checkbox-mountain">Гора-Колокол
+            <input class="feedback-form__checkbox" type="checkbox" name="mountain" id="checkbox-mountain" checked>
+            <span class="feedback-form__check"></span>
+          </label>
+          <label class="feedback-form__option" for="checkbox-park">Слайд-парк
+            <input class="feedback-form__checkbox" type="checkbox" name="park" id="checkbox-park" checked>
+            <span class="feedback-form__check"></span>
+          </label>
+          <label class="feedback-form__option" for="checkbox-redrocks">Красные скалы
+            <input class="feedback-form__checkbox" type="checkbox" name="redrocks" id="checkbox-redrocks">
+            <span class="feedback-form__check"></span>
+          </label>
         </section>
 
         <section class="feedback-form__item">

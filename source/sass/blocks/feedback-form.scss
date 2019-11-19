@@ -28,14 +28,6 @@
     margin-left: 20px;
     margin-bottom: 15px;
   }
-
-  &--option {
-    margin-left: 25px;
-    text-transform: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: $heading-color;
-  }
 }
 
 .feedback-form__subitem {
@@ -57,19 +49,26 @@
   font-weight: bold;
   color: $heading-color;
 
-  &--contact {
-    position: relative;
-    margin-bottom: 20px;
-    height: 58px;
+  &:hover {
+    background-color: $input-hover;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 58px;
-      height: 58px;
-    }
+  &:focus {
+    background-color: transparent;
+    border: 4px solid $input-hover;
+  }
+}
+
+.feedback-form__wrap {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
   }
 
   &--phone::after {
@@ -79,19 +78,105 @@
   &--email::after {
     background: #e6e6e6 url("../../img/icon-mail.svg") center no-repeat;
   }
+}
+
+/* radio button */
+.feedback-form__option {
+  display: block;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: $heading-color;
+  line-height: 50px;
 
   &:hover {
-    background-color: $input-hover;
+    .feedback-form__checkmark {
+      background-color: $input-hover;
+      border: 15px solid $input-hover;
+    }
+
+    /* hover for checkbox */
+    .feedback-form__check {
+      background-color: $input-hover;
+    }
   }
+}
+
+/* creating a custom radio button */
+.feedback-form__checkmark {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 15px solid $input;
+  background-color: $input;
+  border-radius: 50%;
+
+  /* creating the dot (hidden when not checked) */
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+/* disabling the default radio button */
+.feedback-form__radio {
+  display: none;
 
   &:focus {
-    background-color: transparent;
-    border: 4px solid $input-hover;
+    .feedback-form__checkmark {
+      background-color: $input-down-bg;
+      border: 15px solid $input-down-bg;
+    }
   }
 
-  &--radio {
-    height: 45px;
-    width: 45px;
+  /* displaying the dot and its styling */
+  &:checked ~ .feedback-form__checkmark::after {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #333333;
+  }
+}
+
+/* checkbox */
+.feedback-form__check {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 55px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.feedback-form__checkbox {
+  display: none;
+
+  &:checked ~ .feedback-form__check::after {
+    display: block;
+    top: 13px;
+    left: 20px;
+    width: 10px;
+    height: 15px;
+    border: solid #333333;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
   }
 }
 
