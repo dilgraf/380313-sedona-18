@@ -61,13 +61,13 @@
     margin-left: 100px;
   }
 
-  &--svg {
-    fill: #5c6870;
-  }
-
   &:hover {
-    .video__btn--svg {
+    .video__svg {
       fill: #333333;
     }
   }
+}
+
+.video__svg {
+  fill: #5c6870;
 }
