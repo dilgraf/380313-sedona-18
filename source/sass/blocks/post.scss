@@ -2,15 +2,40 @@
   padding: 20px;
   border-top: 1px solid #e5e5e5;
 
+  img {
+    width: 100%;
+  }
+
   &:last-of-type {
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 322px;
+
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
 .post__info {
-  font-size: 14px;
-  line-height: 24px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 30px 10px 20px;
+    background-color: $input;
+
+    &:hover {
+      background-color: $input-hover;
+    }
+  }
 }
 
 .post__heading {
@@ -33,6 +58,11 @@
   font-size: 14px;
   font-weight: bold;
   color: $heading-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    align-self: center;
+  }
 }
 
 .post__pic {

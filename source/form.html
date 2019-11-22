@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,16 +13,24 @@
         <button class="main-nav__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
-          <li class="menu-list__item"><a class="menu-list__link" href="photo.html">Фото и видео</a></li>
-          <li class="menu-list__item"><a class="menu-list__link">Форма отзыва</a></li>
-          <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="photo.html">Фото и видео</a></li>
+            <li class="menu-list__item"><a class="menu-list__link">Форма отзыва</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
+          </ul>
+          <div class="page-header__logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+              </picture>
+            </a>
+          </div>
+        </div>
       </nav>
-      <div class="page-header__logo">
-        <a href="index.html"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona"></a>
-      </div>
     </header>
 
     <main class="page-main">

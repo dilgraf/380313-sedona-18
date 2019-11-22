@@ -42,4 +42,50 @@
     background: url("../../img/icon-burger.svg") center no-repeat;
     background-size: contain;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .city-advantages__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 160px;
+  }
+
+  .city-advantages__item {
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    text-align: center;
+
+    &--gifts {
+      order: 1;
+    }
+
+    &::before {
+      top: -85px;
+      left: 45px;
+    }
+
+    &--house::before {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gifts::before {
+      left: 50px;
+      width: 64px;
+      height: 75px;
+    }
+
+    &--food::before {
+      left: 45px;
+      width: 77px;
+      height: 68px;
+    }
+  }
 }

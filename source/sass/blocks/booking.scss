@@ -1,6 +1,13 @@
 .booking {
+  margin: 0 auto;
   padding: 30px;
   padding-bottom: 67px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 460px;
+  }
 }
 
 .booking__heading {
@@ -9,10 +16,20 @@
   font-weight: bold;
   line-height: 26px;
   color: $heading-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .booking__desc {
   margin-bottom: 57px;
   line-height: 24px;
   color: $desc-color;
+}
+
+.booking__btn {
+  @media (min-width: $tablet-width) {
+    padding: 17px 135px;
+  }
 }

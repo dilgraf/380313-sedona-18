@@ -3,6 +3,20 @@
   margin-top: 35px;
   margin-bottom: 100px;
 }
+ /*
+.video__screen {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+    border: 1px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+}
+*/
 
 .video__track {
   position: absolute;
@@ -70,4 +84,10 @@
 
 .video__svg {
   fill: #5c6870;
+}
+
+@media (min-width: $tablet-width) {
+  .video__panels {
+    display: flex;
+  }
 }
