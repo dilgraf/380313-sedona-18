@@ -3,11 +3,6 @@
   padding: 30px;
   padding-bottom: 67px;
   width: 280px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 460px;
-  }
 }
 
 .booking__heading {
@@ -16,10 +11,6 @@
   font-weight: bold;
   line-height: 26px;
   color: $heading-color;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-  }
 }
 
 .booking__desc {
@@ -28,8 +19,29 @@
   color: $desc-color;
 }
 
-.booking__btn {
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .booking {
+    margin: 0 auto;
+    padding-bottom: 70px;
+    width: 460px;
+  }
+
+  .booking__heading {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .booking__btn {
     padding: 17px 135px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding-bottom: 80px;
+  }
+
+  .booking__desc {
+    margin-bottom: 70px;
   }
 }

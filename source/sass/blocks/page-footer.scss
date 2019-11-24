@@ -9,21 +9,30 @@
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 120px;
-  }
 }
 
 .page-footer__hashtag {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 0;
+    height: 120px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin: 0 120px;
+  }
 }

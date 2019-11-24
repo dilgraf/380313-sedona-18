@@ -2,6 +2,7 @@
   padding: 40px;
   line-height: 24px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .video-intro__heading {
@@ -9,14 +10,19 @@
   font-size: 18px;
   font-weight: bold;
   color: $heading-color;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-  }
 }
 
-.video-intro__desc {
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .video-intro {
+    padding: 0;
+    padding-top: 45px;
+  }
+
+  .video-intro__heading {
+    font-size: 30px;
+  }
+
+  .video-intro__desc {
     max-width: 415px;
   }
 }

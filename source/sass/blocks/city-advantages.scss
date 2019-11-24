@@ -42,10 +42,6 @@
     background: url("../../img/icon-burger.svg") center no-repeat;
     background-size: contain;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 260px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: 0;
-    margin-top: 160px;
+    margin-top: 130px;
   }
 
   .city-advantages__item {
@@ -87,5 +83,37 @@
       width: 77px;
       height: 68px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .city-advantages__list {
+    justify-content: space-around;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .city-advantages__item {
+    align-items: center;
+    width: 290px;
+
+    &::before {
+      top: -75px;
+      left: 105px;
+    }
+
+    &--gifts {
+      .city-advantages__desc {
+        width: 220px;
+      }
+    }
+  }
+
+  .city-advantages__heading {
+    font-size: 21px;
+  }
+
+  .city-advantages__desc {
+    margin: 0;
   }
 }
