@@ -27,11 +27,14 @@
   .features-list {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 45px;
   }
 
   .features-list__item {
-    width: 160px;
+    width: 145px;
+
+    &:first-of-type {
+      width: 160px;
+    }
 
     &--road {
       border: none;
@@ -39,9 +42,8 @@
   }
 
   .features-list__subheading {
-    margin: 0;
+    margin: 10px 0;
     margin-top: 15px;
-    margin-bottom: 10px;
     font-size: 21px;
     line-height: 26px;
   }
@@ -57,6 +59,10 @@
     flex-direction: column;
     padding-bottom: 50px;
     width: 270px;
+
+    &:first-of-type {
+      width: 290px;
+    }
   }
 
   .features-list__subheading {

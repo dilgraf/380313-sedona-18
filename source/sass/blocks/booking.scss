@@ -21,14 +21,20 @@
 
 @media (min-width: $tablet-width) {
   .booking {
-    margin: 0 auto;
-    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
     width: 460px;
   }
 
   .booking__heading {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 30px;
+  }
+
+  .booking__desc {
+    margin-bottom: 35px;
+    width: 460px;
   }
 
   .booking__btn {
@@ -36,12 +42,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .booking {
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   .booking__desc {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 }

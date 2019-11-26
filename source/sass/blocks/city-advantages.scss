@@ -49,7 +49,8 @@
     display: flex;
     justify-content: space-between;
     margin-left: 0;
-    margin-top: 130px;
+    margin-top: 155px;
+    margin-bottom: 50px;
   }
 
   .city-advantages__item {
@@ -84,6 +85,11 @@
       height: 68px;
     }
   }
+
+  .city-advantages__heading {
+    margin-bottom: 15px;
+    font-size: 21px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -91,6 +97,8 @@
     justify-content: space-around;
     padding: 0;
     margin-right: 0;
+    margin-top: 140px;
+    margin-bottom: 80px;
   }
 
   .city-advantages__item {
@@ -107,10 +115,6 @@
         width: 220px;
       }
     }
-  }
-
-  .city-advantages__heading {
-    font-size: 21px;
   }
 
   .city-advantages__desc {

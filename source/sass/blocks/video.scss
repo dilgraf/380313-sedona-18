@@ -3,20 +3,6 @@
   margin-top: 35px;
   margin-bottom: 100px;
 }
-/*
-.video__screen {
-  @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
-    border: 1px solid red;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 800px;
-    height: 500px;
-  }
-}
-*/
 
 .video__track {
   position: absolute;
@@ -87,7 +73,54 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video {
+    margin-top: 75px;
+  }
+
+  .video__screen {
+    width: 648px;
+    height: 500px;
+    vertical-align: top;
+  }
+
   .video__panels {
     display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .video__track {
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+
+    &::before {
+      order: 2;
+      left: 90px;
+      bottom: 20px;
+      margin: auto 0;
+      width: 390px;
+    }
+
+    &::after {
+      top: 40px;
+      left: 205px;
+    }
+  }
+
+  .video__controls {
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__screen {
+    width: 800px;
   }
 }

@@ -1,4 +1,7 @@
 .video-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
   line-height: 24px;
   margin: 0 auto;
@@ -19,10 +22,12 @@
   }
 
   .video-intro__heading {
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
   .video-intro__desc {
+    margin: 0;
     max-width: 415px;
   }
 }
