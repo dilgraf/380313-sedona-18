@@ -22,3 +22,54 @@
   font-weight: bold;
   color: $heading-color;
 }
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    width: 145px;
+
+    &:first-of-type {
+      width: 160px;
+    }
+
+    &--road {
+      border: none;
+    }
+  }
+
+  .features-list__subheading {
+    margin: 10px 0;
+    margin-top: 15px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .features-list__desc {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-list__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 270px;
+
+    &:first-of-type {
+      width: 290px;
+    }
+  }
+
+  .features-list__subheading {
+    align-self: center;
+    width: 130px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}

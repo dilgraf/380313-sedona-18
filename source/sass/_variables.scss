@@ -1,7 +1,18 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 // Font color
 $heading-color: #000000;
 $desc-color: #333333;
 $down-color: rgba(255, 255, 255, 0.3%);
+
+// Menu font color for desktop
+$menu: #000000;
+$menu-hover: #81b3d2;
+$menu-down: rgba(0, 0, 0, 0.3);
+$menu-active: #766357;
+$menu-active-hover: #604e43;
+$menu-active-down: rgba(118, 99, 87, 0.3);
 
 // Background color
 $initial-bg: #81b3d2;

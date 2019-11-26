@@ -189,3 +189,15 @@
   align-self: center;
   width: 280px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form {
+    padding: 0 120px;
+  }
+}

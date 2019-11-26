@@ -43,3 +43,81 @@
     background-size: contain;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .city-advantages__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 155px;
+    margin-bottom: 50px;
+  }
+
+  .city-advantages__item {
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    text-align: center;
+
+    &--gifts {
+      order: 1;
+    }
+
+    &::before {
+      top: -85px;
+      left: 45px;
+    }
+
+    &--house::before {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gifts::before {
+      left: 50px;
+      width: 64px;
+      height: 75px;
+    }
+
+    &--food::before {
+      left: 45px;
+      width: 77px;
+      height: 68px;
+    }
+  }
+
+  .city-advantages__heading {
+    margin-bottom: 15px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .city-advantages__list {
+    justify-content: space-around;
+    padding: 0;
+    margin-right: 0;
+    margin-top: 140px;
+    margin-bottom: 80px;
+  }
+
+  .city-advantages__item {
+    align-items: center;
+    width: 290px;
+
+    &::before {
+      top: -75px;
+      left: 105px;
+    }
+
+    &--gifts {
+      .city-advantages__desc {
+        width: 220px;
+      }
+    }
+  }
+
+  .city-advantages__desc {
+    margin: 0;
+  }
+}

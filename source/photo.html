@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,16 +13,24 @@
         <button class="main-nav__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
-          <li class="menu-list__item"><a class="menu-list__link">Фото и видео</a></li>
-          <li class="menu-list__item"><a class="menu-list__link" href="form.html">Форма отзыва</a></li>
-          <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
+            <li class="menu-list__item"><a class="menu-list__link">Фото и видео</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="form.html">Форма отзыва</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
+          </ul>
+          <div class="page-header__logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+              </picture>
+            </a>
+          </div>
+        </div>
       </nav>
-      <div class="page-header__logo">
-        <a href="index.html"><img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona"></a>
-      </div>
   </header>
 
   <main class="page-main">
@@ -30,73 +39,111 @@
     </div>
     <section class="page-main__header">
       <h1 class="page-main__heading">Фото и видео</h1>
-      <p class="page-main__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и о курсе</p>
+      <p class="page-main__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике. </p>
     </section>
-    <section class="post">
-      <a class="post__imagefull" href="#"><img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Landscapes"></a>
-      <div class="post__info">
-        <h2 class="post__heading">Неродные просторы</h2>
-        <p class="post__author">Автор фото: Борис</p>
-        <button class="post__like" type="button">
-          <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
-          1350
-        </button>
-      </div>
-    </section>
-    <section class="post">
-      <a class="post__imagefull" href="#"><img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Flora"></a>
-      <div class="post__info">
-        <h2 class="post__heading">Местная растительность</h2>
-        <p class="post__author">Автор фото: Сергей</p>
-        <button class="post__like" type="button">
-          <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
-          143
-        </button>
-      </div>
-    </section>
-    <section class="post">
-      <a class="post__imagefull" href="#"><img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Forest"></a>
-      <div class="post__info">
-        <h2 class="post__heading">Дорога на север</h2>
-        <p class="post__author">Автор фото: Петр</p>
-        <button class="post__like" type="button">
-          <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
-          96
-        </button>
-      </div>
-    </section>
-    <section class="post">
-      <a class="post__imagefull" href="#"><img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil's bridge"></a>
-      <div class="post__info">
-        <h2 class="post__heading">Мост дьявола</h2>
-        <p class="post__author">Автор фото: Антон</p>
-        <button class="post__like" type="button">
-          <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
-          254
-        </button>
-      </div>
-    </section>
-    <section class="video-intro">
-      <h2 class="video-intro__heading">Все еще сомневаетесь?</h2>
-      <p class="video-intro__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <div class="video">
-        <img src="img/video-mobile@1x.jpg" width="320" height="200" alt="">
-        <div class="video__panels">
-          <div class="video__track"></div>
-          <div class="video__controls">
-            <button class="video__btn video__btn--replay" type="button">
-              <svg class="video__svg" src="img/icon-video-replay.svg" width="16" height="20"></svg>
-            </button>
-            <button class="video__btn video__btn--captions">
-                <svg class="video__svg" src="img/icon-video-subtitles.svg" width="32" height="20"></svg>
-            </button>
-            <button class="video__btn video__btn--fullscreen">
-                <svg class="video__svg" src="img/icon-video-fullscreen.svg" width="20" height="20"></svg>
-            </button>
+    <div class="page-main__wrapper">
+      <section class="post">
+        <a class="post__imagefull" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Landscapes">
+          </picture>
+        </a>
+        <div class="post__info">
+          <div class="post__info-wrapper">
+            <h2 class="post__heading">Неродные просторы</h2>
+            <p class="post__author">Автор фото: Борис</p>
+          </div>
+          <button class="post__like" type="button">
+            <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
+            1350
+          </button>
+        </div>
+      </section>
+      <section class="post">
+        <a class="post__imagefull" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Flora">
+          </picture>
+        </a>
+        <div class="post__info">
+          <div class="post__info-wrapper">
+            <h2 class="post__heading">Местная растительность</h2>
+            <p class="post__author">Автор фото: Сергей</p>
+          </div>
+          <button class="post__like" type="button">
+            <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
+            143
+          </button>
+        </div>
+      </section>
+      <section class="post">
+        <a class="post__imagefull" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Forest">
+          </picture>
+        </a>
+        <div class="post__info">
+          <div class="post__info-wrapper">
+            <h2 class="post__heading">Дорога на север</h2>
+            <p class="post__author">Автор фото: Петр</p>
+          </div>
+          <button class="post__like" type="button">
+            <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
+            96
+          </button>
+        </div>
+      </section>
+      <section class="post">
+        <a class="post__imagefull" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Devil's bridge">
+          </picture>
+        </a>
+        <div class="post__info">
+          <div class="post__info-wrapper">
+            <h2 class="post__heading">Мост дьявола</h2>
+            <p class="post__author">Автор фото: Антон</p>
+          </div>
+          <button class="post__like" type="button">
+            <svg class="post__pic" src="img/icon-like.svg" width="23" height="21"></svg>
+            254
+          </button>
+        </div>
+      </section>
+      <section class="video-intro">
+        <h2 class="video-intro__heading">Все еще сомневаетесь?</h2>
+        <p class="video-intro__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class="video__screen" src="img/video-mobile@1x.jpg" width="320" height="200" alt="">
+          </picture>
+          <div class="video__panels">
+            <div class="video__track"></div>
+            <div class="video__controls">
+              <button class="video__btn video__btn--replay" type="button">
+                <svg class="video__svg" src="img/icon-video-replay.svg" width="16" height="20"></svg>
+              </button>
+              <button class="video__btn video__btn--captions">
+                  <svg class="video__svg" src="img/icon-video-subtitles.svg" width="32" height="20"></svg>
+              </button>
+              <button class="video__btn video__btn--fullscreen">
+                  <svg class="video__svg" src="img/icon-video-fullscreen.svg" width="20" height="20"></svg>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
