@@ -42,7 +42,7 @@
         <p class="page-main__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <section class="feedback-form__item">
+        <section class="feedback-form__item feedback-form__item--name">
           <h2 class="feedback-form__heading">Представьтесь:</h2>
           <div class="feedback-form__subitem">
             <label class="feedback-form__label" for="fname">Имя*:</label>
@@ -58,19 +58,21 @@
           </div>
         </section>
 
-        <section class="feedback-form__item">
-          <h2 class="feedback-form__heading">Контактная информация:</h2>
-          <label class="feedback-form__label feedback-form__label--contact" for="phone">Контактный телефон*:</label>
-          <div class="feedback-form__wrap feedback-form__wrap--phone">
-            <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
-          </div>
-          <label class="feedback-form__label feedback-form__label--contact" for="email">Электронная почта*:</label>
-          <div class="feedback-form__wrap feedback-form__wrap--email">
-            <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+        <section class="feedback-form__item feedback-form__item--contact">
+          <h2 class="feedback-form__heading feedback-form__heading--centered">Контактная информация:</h2>
+          <div class="feedback-form__wrapper feedback-form__wrapper--contact">
+            <label class="feedback-form__label feedback-form__label--contact" for="phone">Контактный телефон*:</label>
+            <div class="feedback-form__wrap feedback-form__wrap--phone">
+              <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
+            </div>
+            <label class="feedback-form__label feedback-form__label--contact" for="email">Электронная почта*:</label>
+            <div class="feedback-form__wrap feedback-form__wrap--email">
+              <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+            </div>
           </div>
         </section>
 
-        <section class="feedback-form__item">
+        <section class="feedback-form__item feedback-form__item--impression">
           <h2 class="feedback-form__heading">Ваше общее впечатление:</h2>
           <label class="feedback-form__option" for="radio-positive">Скорее положительное
             <input class="feedback-form__radio" type="radio" name="impression" value="positive" id="radio-positive" checked>
@@ -86,28 +88,30 @@
           </label>
         </section>
 
-        <section class="feedback-form__item">
-          <h2 class="feedback-form__heading">Посещенные достопримечательности:</h2>
-          <label class="feedback-form__option" for="checkbox-bridge">Мост Дьявола
-            <input class="feedback-form__checkbox" type="checkbox" name="bridge" id="checkbox-bridge" checked>
-            <span class="feedback-form__check"></span>
-          </label>
-          <label class="feedback-form__option" for="checkbox-mountain">Гора-Колокол
-            <input class="feedback-form__checkbox" type="checkbox" name="mountain" id="checkbox-mountain" checked>
-            <span class="feedback-form__check"></span>
-          </label>
-          <label class="feedback-form__option" for="checkbox-park">Слайд-парк
-            <input class="feedback-form__checkbox" type="checkbox" name="park" id="checkbox-park" checked>
-            <span class="feedback-form__check"></span>
-          </label>
-          <label class="feedback-form__option" for="checkbox-redrocks">Красные скалы
-            <input class="feedback-form__checkbox" type="checkbox" name="redrocks" id="checkbox-redrocks">
-            <span class="feedback-form__check"></span>
-          </label>
+        <section class="feedback-form__item feedback-form__item--visited">
+          <h2 class="feedback-form__heading feedback-form__heading--centered">Посещенные достопримечательности:</h2>
+          <div class="feedback-form__wrapper feedback-form__wrapper--visited">
+            <label class="feedback-form__option feedback-form__option--checkbox" for="checkbox-bridge">Мост Дьявола
+              <input class="feedback-form__checkbox" type="checkbox" name="bridge" id="checkbox-bridge" checked>
+              <span class="feedback-form__check"></span>
+            </label>
+            <label class="feedback-form__option feedback-form__option--checkbox" for="checkbox-mountain">Гора-Колокол
+              <input class="feedback-form__checkbox" type="checkbox" name="mountain" id="checkbox-mountain" checked>
+              <span class="feedback-form__check"></span>
+            </label>
+            <label class="feedback-form__option feedback-form__option--checkbox" for="checkbox-park">Слайд-парк
+              <input class="feedback-form__checkbox" type="checkbox" name="park" id="checkbox-park" checked>
+              <span class="feedback-form__check"></span>
+            </label>
+            <label class="feedback-form__option feedback-form__option--checkbox" for="checkbox-redrocks">Красные скалы
+              <input class="feedback-form__checkbox" type="checkbox" name="redrocks" id="checkbox-redrocks">
+              <span class="feedback-form__check"></span>
+            </label>
+          </div>
         </section>
 
-        <section class="feedback-form__item">
-          <h2 class="feedback-form__heading">Опишите свои эмоции:</h2>
+        <section class="feedback-form__item feedback-form__item--describe">
+          <h2 class="feedback-form__heading feedback-form__heading--centered">Опишите свои эмоции:</h2>
           <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
         <button class="feedback-form__btn btn" type="submit">Отправить отзыв</button>

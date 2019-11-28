@@ -75,6 +75,7 @@
 @media (min-width: $tablet-width) {
   .video {
     margin-top: 75px;
+    margin-bottom: 40px;
   }
 
   .video__screen {
@@ -86,26 +87,30 @@
   .video__panels {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(#000000, 0.6%);
   }
 
   .video__track {
-    left: 0;
-    bottom: 0;
-    height: 90px;
-    width: 100%;
+    bottom: 20px;
+    width: 390px;
+    background-color: transparent;
 
     &::before {
-      order: 2;
-      left: 90px;
+      left: 0;
       bottom: 20px;
       margin: auto 0;
       width: 390px;
     }
 
     &::after {
-      top: 40px;
-      left: 205px;
+      top: 17px;
+      left: 100px;
     }
   }
 
@@ -117,10 +122,23 @@
     width: 100%;
     background-color: transparent;
   }
+
+  .video__btn--captions {
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .video__screen {
     width: 800px;
+  }
+
+  .video__track {
+    width: 540px;
+
+    &::before {
+      width: 540px;
+    }
   }
 }
