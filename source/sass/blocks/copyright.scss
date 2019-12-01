@@ -16,3 +16,13 @@
   height: 34px;
   background: url("../../img/logo-htmlacademy.svg") center no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-left: 10px;
+  }
+
+  .copyright__link {
+    margin-left: 13px;
+  }
+}

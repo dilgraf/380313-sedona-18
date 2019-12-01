@@ -6,20 +6,21 @@
 .features__header {
   position: relative;
   margin: 40px 30px;
+  margin-bottom: 30px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -55px;
-    left: 0;
+    bottom: -45px;
+    left: -40px;
     height: 37px;
-    width: 100%;
+    width: 130%;
     background: url("../../img/bg-triangle.svg") center no-repeat;
   }
 }
 
 .features__heading {
-  margin-bottom: 25px;
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -27,39 +28,54 @@
 }
 
 .features__intro {
+  margin-top: 30px;
+  margin-bottom: 0;
   line-height: 24px;
 }
 
 .features__item {
   margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
 
 .features__text {
-  padding: 30px 30px;
+  margin: 0 auto;
+  padding: 40px 15px;
   background-color: $initial-bg;
   color: #ffffff;
+
+  &--second {
+    padding-top: 25px;
+  }
 }
 
 .features__subheading {
+  margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
 }
 
 .features__desc {
-  margin: 20px auto;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .features__pic {
-  width: 320px;
+  width: 100%;
   height: 260px;
   object-fit: cover;
+  vertical-align: top;
 }
 
 @media (min-width: $tablet-width) {
   .features__header {
     align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     max-width: 490px;
 
     &::after {
@@ -75,7 +91,11 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 260px;
+    height: 255px;
+
+    picture {
+      flex-grow: 1;
+    }
   }
 
   .features__text {
@@ -83,9 +103,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     box-sizing: border-box;
-    width: 34%;
-    max-height: 260px;
+    width: 33%;
+    max-height: 255px;
 
     &--second {
       order: 1;
@@ -94,7 +115,7 @@
 
   .features__subheading {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 0;
     width: 150px;
     font-size: 21px;
   }
@@ -104,11 +125,13 @@
   }
 
   .features__desc {
+    margin-top: 25px;
     width: 165px;
   }
 
   .features__pic {
-    width: 100%;
+    max-height: 255px;
+    min-width: 510px;
     background-size: cover;
   }
 }
@@ -119,16 +142,17 @@
     width: 100%;
   }
 
-  .features__header {
-    margin-top: 25px;
-  }
-
   .features__desc {
-    width: 270px;
+    width: auto;
   }
 
   .features__text {
     box-sizing: border-box;
     max-height: 260px;
+    padding: 25px 60px 40px 60px;
+
+    &--second {
+      padding: 25px 85px 40px 85px;
+    }
   }
 }

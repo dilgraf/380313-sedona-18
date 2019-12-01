@@ -187,7 +187,12 @@
 
 .feedback-form__btn {
   align-self: center;
-  width: 280px;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.feedback-form__legend {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -262,6 +267,7 @@
     }
 
     &--visited {
+      margin-top: 55px;
       height: 235px;
     }
 
@@ -302,6 +308,14 @@
     width: 50%;
     margin-bottom: 60px;
   }
+
+  .feedback-form__legend {
+    display: block;
+    padding-top: 15px;
+    margin-left: auto;
+    font-size: 14px;
+    color: $desc-color;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -315,7 +329,6 @@
     }
 
     &--visited {
-      margin-top: 55px;
       height: auto;
     }
 

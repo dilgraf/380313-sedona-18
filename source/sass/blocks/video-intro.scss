@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
-  line-height: 24px;
   margin: 0 auto;
-  border: 1px solid red;
+  padding: 30px;
+  line-height: 24px;
 }
 
 .video-intro__heading {
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: bold;
   color: $heading-color;
@@ -18,7 +18,7 @@
 @media (min-width: $tablet-width) {
   .video-intro {
     padding: 0;
-    padding-top: 45px;
+    padding-top: 65px;
   }
 
   .video-intro__heading {
@@ -29,5 +29,11 @@
   .video-intro__desc {
     margin: 0;
     max-width: 415px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-intro {
+    padding-top: 70px;
   }
 }
