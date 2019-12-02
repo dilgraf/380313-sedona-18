@@ -4,6 +4,8 @@
 
   img {
     width: 100%;
+    object-fit: cover;
+    vertical-align: top;
   }
 
   &:last-of-type {
@@ -24,6 +26,8 @@
 }
 
 .post__author {
+  margin: 0;
+  margin-bottom: 10px;
   text-transform: none;
   line-height: 15px;
 }
@@ -45,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .post {
     padding: 0;
-    width: 324px;
+    width: 50%;
 
     img {
       vertical-align: top;
@@ -65,7 +69,7 @@
   .post__info {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 25px 8px 20px;
     background-color: $input;
   }
 

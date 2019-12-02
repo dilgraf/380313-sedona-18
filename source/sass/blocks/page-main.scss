@@ -5,8 +5,8 @@
 
 .page-main__header {
   align-self: center;
-  padding: 20px;
-  padding-top: 40px;
+  padding: 25px;
+  padding-bottom: 15px;
   max-width: 430px;
 }
 
@@ -24,7 +24,8 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
+    max-width: 443px;
   }
 
   .page-main__heading {
@@ -48,6 +49,5 @@
 
   .page-main__header {
     padding-top: 90px;
-    padding-bottom: 40px;
   }
 }

@@ -34,10 +34,10 @@
   .promo {
     min-height: 290px;
     background: url("../../img/bg-back-tablet@1x.jpg") center bottom no-repeat;
-    background-size: 768px 518px;
+    background-size: cover;
 
     &::after {
-      bottom: 0;
+      bottom: -1px;
       height: 57px;
       background: url("../../img/bg-intro-triangle-tablet.svg") center bottom no-repeat;
     }
@@ -56,7 +56,8 @@
   }
 
   .promo__text-sedona {
-    margin-top: 90px;
+    margin: 0 auto;
+    margin-top: 95px;
     height: 80px;
     width: 460px;
   }
