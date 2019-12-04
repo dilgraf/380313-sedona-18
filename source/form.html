@@ -17,7 +17,7 @@
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item"><a class="menu-list__link" href="index.html">Главная</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="photo.html">Фото и видео</a></li>
-            <li class="menu-list__item"><a class="menu-list__link">Форма отзыва</a></li>
+            <li class="menu-list__item menu-list__item--active"><a class="menu-list__link">Форма отзыва</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
           </ul>
           <div class="page-header__logo">
@@ -61,7 +61,7 @@
         <section class="feedback-form__item feedback-form__item--contact">
           <h2 class="feedback-form__heading feedback-form__heading--centered">Контактная информация:</h2>
           <div class="feedback-form__wrapper feedback-form__wrapper--contact">
-            <label class="feedback-form__label feedback-form__label--contact" for="phone">Контактный телефон*:</label>
+            <label class="feedback-form__label feedback-form__label--contact" for="phone"><span>Контактный </span>телефон*:</label>
             <div class="feedback-form__wrap feedback-form__wrap--phone">
               <input class="feedback-form__input" type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Введите телефон" required>
             </div>
@@ -122,26 +122,28 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__hashtag">#visitsedona</div>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы в Youtube</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">#visitsedona</div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в Youtube</a>
+            </li>
+          </ul>
         </div>
-      </footer>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

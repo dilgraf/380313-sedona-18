@@ -29,14 +29,14 @@
   &--house::before {
     width: 37px;
     height: 36px;
-    background: url("../../img/icon-house.svg") center no-repeat;
+    background: url("../img/icon-house.svg") center no-repeat;
     background-size: contain;
   }
 
   &--gifts::before {
     width: 32px;
     height: 38px;
-    background: url("../../img/icon-gift.svg") center no-repeat;
+    background: url("../img/icon-gift.svg") center no-repeat;
     background-size: contain;
   }
 
@@ -45,7 +45,7 @@
     left: -50px;
     width: 40px;
     height: 35px;
-    background: url("../../img/icon-burger.svg") center no-repeat;
+    background: url("../img/icon-burger.svg") center no-repeat;
     background-size: contain;
   }
 }
