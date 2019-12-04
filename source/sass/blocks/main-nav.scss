@@ -10,24 +10,24 @@
     position: absolute;
     bottom: 15px;
     right: 20px;
-  
+
     width: 23px;
     height: 22px;
     background: url("../img/icon-menu.svg") center no-repeat;
     border: none;
     cursor: pointer;
   }
-  
+
   .main-nav--opened .main-nav__button {
     top: 15px;
     left: auto;
     right: 22px;
-  
+
     width: 23px;
     height: 22px;
     background: url("../img/icon-cross.svg") center no-repeat;
   }
-  
+
   .main-nav--nojs .main-nav__button {
     display: none;
   }
