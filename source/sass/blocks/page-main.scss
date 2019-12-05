@@ -5,19 +5,19 @@
 
 .page-main__header {
   align-self: center;
-  padding: 25px;
-  padding-bottom: 15px;
+  padding: 20px;
   max-width: 430px;
 }
 
 .page-main__heading {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: bold;
   color: $heading-color;
 }
 
 .page-main__intro {
+  margin-bottom: 0;
   line-height: 24px;
 }
 
