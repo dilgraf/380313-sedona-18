@@ -52,8 +52,7 @@
       background: url("../img/bg-intro-triangle-tablet.svg") center bottom no-repeat;
     }
 
-    @media 
-    (min-resolution: $retina-dpi),
+    @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
