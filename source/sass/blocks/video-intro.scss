@@ -18,7 +18,7 @@
 @media (min-width: $tablet-width) {
   .video-intro {
     padding: 0;
-    padding-top: 65px;
+    padding-top: 70px;
   }
 
   .video-intro__heading {
@@ -28,7 +28,8 @@
 
   .video-intro__desc {
     margin: 0;
-    max-width: 415px;
+    max-width: 420px;
+    letter-spacing: 0.01em;
   }
 }
 

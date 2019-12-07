@@ -6,4 +6,17 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  &:active {
+    background-color: $down-bg;
+    color: $down-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-bg;
+  }
 }

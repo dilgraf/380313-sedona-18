@@ -1,6 +1,8 @@
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
 
 // Font color
 $heading-color: #000000;
@@ -15,13 +17,18 @@ $menu-active: #766357;
 $menu-active-hover: #604e43;
 $menu-active-down: rgba(118, 99, 87, 0.3);
 
-// Background color
+// Menu and button background color
 $initial-bg: #81b3d2;
 $hover-bg: #669ec0;
 $down-bg: #5496bd;
+$disabled-bg: #e5e5e5;
 
 // Form background color
 $input: #f2f2f2;
 $input-hover: #e5e5e5;
 $input-down-bg: #d5d5d5;
 $input-down-dot: #a4a4a4;
+
+//Logo
+$logo-hover: #81b3d2;
+$logo-active: #000000, 0.3;
