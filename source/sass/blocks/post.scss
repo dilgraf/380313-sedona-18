@@ -1,5 +1,5 @@
 .post {
-  padding: 20px;
+  padding: 22px 20px 18px 20px;
   border-top: 1px solid #e5e5e5;
 
   img {
@@ -8,7 +8,7 @@
     vertical-align: top;
   }
 
-  &:last-of-type {
+  &:nth-of-type(4) {
     border-bottom: 1px solid #e5e5e5;
   }
 }
@@ -19,6 +19,7 @@
 
 .post__heading {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
   line-height: 15px;

@@ -6,15 +6,16 @@
 .features__header {
   position: relative;
   margin: 40px 30px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -45px;
-    left: -40px;
+    bottom: -43px;
+    left: calc(50% - 160px);
+
     height: 37px;
-    width: 130%;
+    width: 320px;
     background: url("../img/bg-triangle.svg") center no-repeat;
   }
 }
@@ -28,7 +29,7 @@
 }
 
 .features__intro {
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 0;
   line-height: 24px;
 }
@@ -70,6 +71,7 @@
   object-fit: cover;
   vertical-align: top;
 }
+
 
 @media (min-width: $tablet-width) {
   .features__header {
