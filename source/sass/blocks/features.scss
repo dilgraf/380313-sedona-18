@@ -6,15 +6,16 @@
 .features__header {
   position: relative;
   margin: 40px 30px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -45px;
-    left: -40px;
+    bottom: -43px;
+    left: calc(50% - 160px);
+
     height: 37px;
-    width: 130%;
+    width: 320px;
     background: url("../img/bg-triangle.svg") center no-repeat;
   }
 }
@@ -28,7 +29,7 @@
 }
 
 .features__intro {
-  margin-top: 30px;
+  margin-top: 28px;
   margin-bottom: 0;
   line-height: 24px;
 }
@@ -71,6 +72,7 @@
   vertical-align: top;
 }
 
+
 @media (min-width: $tablet-width) {
   .features__header {
     align-self: center;
@@ -85,6 +87,10 @@
 
   .features__heading {
     font-size: 21px;
+  }
+
+  .features__intro {
+    letter-spacing: 0.01em;
   }
 
   .features__item {
@@ -104,8 +110,9 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding-top: 40px;
     box-sizing: border-box;
-    width: 33%;
+    width: 33.5%;
     max-height: 255px;
 
     &--second {
@@ -125,8 +132,9 @@
   }
 
   .features__desc {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 165px;
+    letter-spacing: 0.01em;
   }
 
   .features__pic {
@@ -149,10 +157,10 @@
   .features__text {
     box-sizing: border-box;
     max-height: 260px;
-    padding: 25px 60px 40px 60px;
+    padding: 30px 60px 40px 60px;
 
     &--second {
-      padding: 25px 85px 40px 85px;
+      padding: 30px 85px 40px 85px;
     }
   }
 }

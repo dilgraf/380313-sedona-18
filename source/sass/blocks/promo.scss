@@ -1,17 +1,22 @@
 .promo {
   position: relative;
-  min-height: 160px;
+  min-height: 155px;
   width: 100%;
   background: url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 26px;
     background: url("../img/bg-intro-triangle-mobile.svg") center bottom no-repeat;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px 389px;
   }
 }
 
@@ -20,6 +25,10 @@
   width: 100%;
   background: url("../img/bg-back-mobile@1x.jpg") center no-repeat;
   background-size: 768px 389px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo__text {
@@ -41,12 +50,20 @@
       height: 57px;
       background: url("../img/bg-intro-triangle-tablet.svg") center bottom no-repeat;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .promo--lead {
     height: 518px;
     background: url("../img/bg-back-tablet@1x.jpg") center no-repeat;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .promo__text {
@@ -57,7 +74,7 @@
 
   .promo__text-sedona {
     margin: 0 auto;
-    margin-top: 95px;
+    margin-top: 100px;
     height: 80px;
     width: 460px;
   }
@@ -73,10 +90,18 @@
       height: 57px;
       background: url("../img/bg-intro-triangle-desktop.svg") center bottom no-repeat;
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .promo--lead {
     background: url("../img/bg-back-desktop@1x.jpg")  top no-repeat;
     background-size: 1200px 518px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

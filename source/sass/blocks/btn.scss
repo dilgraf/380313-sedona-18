@@ -1,9 +1,22 @@
 .btn {
-  padding: 15px 35px;
+  padding: 15px 45px;
   background-color: $initial-bg;
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  &:active {
+    background-color: $down-bg;
+    color: $down-color;
+  }
+
+  &:disabled {
+    background-color: $disabled-bg;
+  }
 }
