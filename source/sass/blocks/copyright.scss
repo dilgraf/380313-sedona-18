@@ -14,7 +14,14 @@
   font-size: 0;
   width: 27px;
   height: 34px;
-  background: url("../img/logo-htmlacademy.svg") center no-repeat;
+  
+  &:hover {
+    fill: $logo-hover;
+  }
+
+  &:active {
+    fill: $logo-active;
+  }
 }
 
 @media (min-width: $tablet-width) {

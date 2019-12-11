@@ -10,16 +10,21 @@
 
 .video-intro__heading {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: bold;
   color: $heading-color;
 }
 
+.video-intro__desc {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .video-intro {
     padding: 0;
-    padding-top: 70px;
+    padding-top: 65px;
   }
 
   .video-intro__heading {
