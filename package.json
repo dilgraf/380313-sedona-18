@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "object-fit-polyfill": "^0.1.0"
   }
 }
