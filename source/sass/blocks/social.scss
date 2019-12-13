@@ -10,7 +10,9 @@
   display: inline-block;
   height: 48px;
   width: 46px;
+  box-sizing: border-box;
   background-color: $initial-bg;
+  fill: #ffffff;
 
   &:hover {
     background-color: $hover-bg;
@@ -18,25 +20,20 @@
 
   &:focus {
     background-color: $down-bg;
+    fill: $down-color;
   }
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-top: 15px;
   }
 
   &--facebook {
     margin: 0 6px 0 6px;
-    background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-top: 13px;
   }
 
   &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-top: 16px;
   }
 }
 

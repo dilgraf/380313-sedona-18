@@ -1,7 +1,7 @@
 .video {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 
 .video__screen {
@@ -20,8 +20,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     height: 3px;
     width: 84%;
     background: #ffffff;
@@ -31,8 +31,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 55px;
+    top: 20px;
+    left: 57px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -47,17 +47,20 @@
   position: absolute;
   bottom: -65px;
   left: 20px;
-  box-sizing: border-box;
+
   margin: 0 auto;
   padding: 22px;
+  padding-left: 25px;
   height: 65px;
   width: 280px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 .video__btn {
+  padding: 0;
   height: 20px;
-  border: 1px solid red;
+  border: none;
   background-color: transparent;
   cursor: pointer;
 
@@ -67,13 +70,19 @@
 
   &:hover {
     .video__svg {
-      fill: #333333;
+      fill: $controls_mobile-hover;
+    }
+  }
+
+  &:active {
+    .video__svg {
+      fill: $controls_mobile-active;
     }
   }
 }
 
 .video__svg {
-  fill: #5c6870;
+  fill: $controls_mobile;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,12 +104,12 @@
     left: 0;
     margin: 0 auto;
     width: 100%;
-    height: 90px;
+    height: 95px;
     background-color: rgba(#000000, 0.6%);
   }
 
   .video__track {
-    bottom: 20px;
+    bottom: 25px;
     width: 390px;
     background-color: transparent;
 
@@ -121,6 +130,9 @@
     flex-wrap: wrap;
     bottom: 0;
     left: 0;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 40px;
     height: 90px;
     width: 100%;
     background-color: transparent;
@@ -129,6 +141,24 @@
   .video__btn--captions {
     margin-left: auto;
     margin-right: 30px;
+  }
+
+  .video__btn {
+    &:hover {
+      .video__svg {
+        fill: $controls-hover;
+      }
+    }
+
+    &:active {
+      .video__svg {
+        fill: $controls-active;
+      }
+    }
+  }
+
+  .video__svg {
+    fill: $controls;
   }
 }
 
@@ -142,11 +172,25 @@
     width: 800px;
   }
 
+  .video__panels {
+    height: 90px;
+  }
+
   .video__track {
+    bottom: 24px;
     width: 540px;
 
     &::before {
       width: 540px;
     }
+
+    &::after {
+      top: 17px;
+    }
+  }
+
+  .video__controls {
+    padding-top: 15px;
+    padding-right: 44px;
   }
 }
