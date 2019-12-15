@@ -5,3 +5,9 @@
     vertical-align: top;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    margin: 0;
+  }
+}
