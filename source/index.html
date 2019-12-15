@@ -8,15 +8,10 @@
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="picturefill.js" async=""></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
-    <svg style="display:none">
-      <symbol viewBox="0 0 26.943 34.09" id="logo-academy">
-        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
-      </symbol>
-    </svg>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -28,7 +23,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
-            <li class="menu-list__item menu-list__item--active"><a class="menu-list__link">Главная</a></li>
+            <li class="menu-list__item"><a class="menu-list__link menu-list__link--active">Главная</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="photo.html">Фото и видео</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="form.html">Форма отзыва</a></li>
             <li class="menu-list__item"><a class="menu-list__link" href="#">HTML Academy</a></li>
@@ -80,12 +75,12 @@
             <li class="city-advantages__item city-advantages__item--gifts">
               <svg class="city-advantages__pic city-advantages__pic--gifts" width="63" height="75" viewbox="0 0 63 75"><use xlink:href="#icon-gift"></use></svg>
               <h3 class="city-advantages__heading">Сувениры</h3>
-              <p class="city-advantages__desc">Не только китайского, <br>но и местного производства!</p>
+              <p class="city-advantages__desc">Не только китайского, <br class="city-advantages__desc--break break">но и местного производства!</p>
             </li>
             <li class="city-advantages__item city-advantages__item--food">
               <svg class="city-advantages__pic city-advantages__pic--food" width="76" height="69" viewbox="0 0 76 69"><use xlink:href="#icon-burger"></use></svg>
               <h3 class="city-advantages__heading">Еда</h3>
-              <p class="city-advantages__desc">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
+              <p class="city-advantages__desc">Всегда заказывайте фирменный бургер, <br class="city-advantages__desc--break break">вы не разочаруетесь!</p>
             </li>
           </ul>
         </section>
@@ -124,7 +119,7 @@
       </section>
       <section class="booking">
         <h2 class="booking__heading">Заинтересовались?</h2>
-        <p class="booking__desc">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="booking__desc">Укажите предполагаемые даты поездки,<br class="booking__desc__desc--break break"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="booking__btn btn" href="#">Найти гостиницу</a>
       </section>
       <div class="map">
@@ -160,7 +155,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27px" height="34px"><use xlink:href="#logo-academy"></use></svg>
+            <svg width="27px" height="34px"><use xlink:href="#logo-htmlacademy"></use></svg>
             HTML Academy
           </a>
         </div>

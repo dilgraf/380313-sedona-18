@@ -45,9 +45,7 @@
   }
 }
 
-.city-advantages__desc br {
-  display: none;
-}
+
 
 @media (min-width: $tablet-width) {
   .city-advantages__list {
@@ -95,10 +93,6 @@
       margin-bottom: 5px;
     }
   }
-
-  .city-advantages__desc br {
-    display: inline;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -109,6 +103,6 @@
   .city-advantages__item {
     align-items: center;
     padding: 0 55px;
-    width: 290px;
+    max-width: 290px;
   }
 }
