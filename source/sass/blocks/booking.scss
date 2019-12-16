@@ -14,12 +14,9 @@
 
 .booking__desc {
   margin-bottom: 55px;
+  max-width: 440px;
   line-height: 24px;
   color: $desc-color;
-
-  br {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -40,10 +37,6 @@
     margin: 0 auto;
     margin-bottom: 45px;
     width: 440px;
-
-    br {
-      display: inline;
-    }
   }
 
   .booking__btn {
