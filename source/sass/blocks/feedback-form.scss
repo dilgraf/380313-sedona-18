@@ -114,7 +114,8 @@
   }
 
   &:hover {
-    .feedback-form__label-radio::before, .feedback-form__label-check::before {
+    .feedback-form__label-radio::before,
+    .feedback-form__label-check::before {
       background-color: $input-hover;
       border-color: $input-hover;
     }
