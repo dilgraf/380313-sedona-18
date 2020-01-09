@@ -1,6 +1,5 @@
 .city-advantages__list {
   margin: 35px;
-  margin-bottom: 37px;
   padding-left: 35px;
   list-style: none;
   text-align: left;
@@ -17,6 +16,10 @@
 .city-advantages__item {
   position: relative;
   margin-bottom: 28px;
+}
+
+.city-advantages__desc {
+  width: 100%;
 }
 
 .city-advantages__pic {
@@ -50,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 60px 0 50px 0;
+    margin: 55px 0 50px 0;
   }
 
   .city-advantages__item {
@@ -96,6 +99,7 @@
 @media (min-width: $desktop-width) {
   .city-advantages__list {
     margin-bottom: 70px;
+    flex-wrap: wrap;
   }
 
   .city-advantages__item {

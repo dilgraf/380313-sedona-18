@@ -3,9 +3,10 @@
   border-top: 1px solid #e5e5e5;
 
   img {
+    display: block;
+    margin: 0;
     width: 100%;
     object-fit: cover;
-    vertical-align: top;
   }
 
   &:nth-of-type(4) {
@@ -71,7 +72,7 @@
   .post__info {
     display: flex;
     align-items: center;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 8px 20px;
     background-color: $input;
 
     &--cactus,
@@ -112,6 +113,7 @@
     left: 0;
     display: flex;
     align-items: center;
+    padding-bottom: 12px;
     box-sizing: border-box;
     width: 100%;
     background-color: rgba(#000000, 0.3%);

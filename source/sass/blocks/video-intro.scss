@@ -19,12 +19,14 @@
 .video-intro__desc {
   margin-top: 0;
   margin-bottom: 15px;
+  width: 100%;
+  max-width: 420px;
 }
 
 @media (min-width: $tablet-width) {
   .video-intro {
     padding: 0;
-    padding-top: 65px;
+    padding-top: 68px;
   }
 
   .video-intro__heading {
