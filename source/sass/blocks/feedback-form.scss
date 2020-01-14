@@ -294,7 +294,7 @@
     &--name {
       justify-content: space-between;
       padding-left: 55px;
-      width: 49%;
+      width: 49.5%;
       height: 290px;
       box-sizing: border-box;
     }
@@ -385,7 +385,7 @@
 
   .feedback-form__legend {
     display: block;
-    padding-top: 15px;
+    padding-top: 20px;
     margin-left: auto;
     font-size: 14px;
     color: $desc-color;
@@ -424,10 +424,6 @@
     &--describe {
       margin-top: 15px;
     }
-  }
-
-  .feedback-form__subitem {
-    margin-bottom: 18px;
   }
 
   .feedback-form__heading {
@@ -490,6 +486,10 @@
       &:nth-of-type(2) {
         padding-right: 0;
       }
+
+      &:last-of-type {
+        margin-bottom: 62px;
+      }
     }
   }
 
@@ -500,5 +500,9 @@
 
   .feedback-form__btn {
     margin-bottom: 70px;
+  }
+
+  .feedback-form__legend {
+    padding-top: 25px;
   }
 }

@@ -6,7 +6,8 @@
     display: block;
     margin: 0;
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    overflow: hidden;
   }
 
   &:nth-of-type(4) {
@@ -56,14 +57,14 @@
 
     img {
       vertical-align: top;
-      height: 267px;
+      height: auto;
+      overflow: hidden;
     }
 
     &:first-of-type {
       width: 100%;
 
       img {
-        object-fit: cover;
         height: 400px;
       }
     }
